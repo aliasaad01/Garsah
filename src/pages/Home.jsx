@@ -80,7 +80,7 @@ const Home = () => {
       <section className="py-20 px-6 md:px-12 text-center md:text-start">
         <div className="bg-[#2D5A27] rounded-[40px] p-10 md:p-20 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="max-w-xl">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">
+            <h2 className="text-4xl md:text-5xl font-serif mb-6 text-white">
               Ready to find your next green companion?
             </h2>
             <p className="text-green-100/70 mb-8 leading-relaxed">
