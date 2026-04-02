@@ -65,7 +65,10 @@ const PlantDetails = () => {
 
           {/* أزرار الأكشن */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <Button className="flex-1 flex items-center justify-center gap-2">
+            <Button
+              variant="primary"
+              className="flex-1 flex items-center justify-center gap-2"
+            >
               <ShoppingCart size={18} /> Add to Cart
             </Button>
             <Button

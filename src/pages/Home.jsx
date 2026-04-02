@@ -20,7 +20,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <Link to={"/shop"}>
-              <Button>Start Your Green Journey</Button>
+              <Button variant="primary">Start Your Green Journey</Button>
             </Link>
             <Button variant="secondary">Browse Collection</Button>
           </div>

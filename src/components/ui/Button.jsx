@@ -1,4 +1,4 @@
-const Button = ({ children, variant = "primary", onClick, className = "" }) => {
+const Button = ({ children, variant = "", onClick, className = "" }) => {
   const styles = {
     primary: "bg-[#2D5A27] text-white hover:bg-green-900",
     secondary:
