@@ -78,7 +78,7 @@ const Home = () => {
 
       {/* 3. Featured Plant Preview (CTA) */}
       <section className="py-20 px-6 md:px-12 text-center md:text-start">
-        <div className="bg-[#2D5A27] rounded-[40px] p-10 md:p-20 text-white flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="bg-[#2D5A27] rounded-[40px] p-10 md:p-20 flex flex-col md:flex-row items-center justify-between gap-10">
           <div className="max-w-xl">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">
               Ready to find your next green companion?
