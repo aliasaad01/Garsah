@@ -16,15 +16,12 @@ import { usePlants } from "../context/PlantContext";
 const PlantDetails = () => {
   const { addToMyPlants } = usePlants();
 
-  // 1. جلب الـ ID من الرابط
   const { id } = useParams();
 
-  // 2. البحث عن النبتة المطلوبة (استخدام useMemo للأداء)
   const plant = useMemo(() => {
     return plants.find((p) => p.id === parseInt(id));
   }, [id]);
 
-  // في حال لم يتم العثور على النبتة
   if (!plant) {
     return (
       <div className="h-screen flex flex-col items-center justify-center">
@@ -51,7 +48,7 @@ const PlantDetails = () => {
       </nav>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-        {/* القسم اليسار: التفاصيل والوصف */}
+        {/* Left Side */}
         <div className="order-2 md:order-1 max-w-lg m-auto text-center md:m-0 md:text-start">
           <h2 className="text-[10px] font-bold text-gray-400 tracking-[0.3em] uppercase mb-4">
             Botanical Specimen No. {plant.id}00{plant.id}
@@ -63,7 +60,7 @@ const PlantDetails = () => {
             "
           </p>
 
-          {/* أزرار الأكشن */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
             <Button
               variant="primary"
@@ -80,8 +77,8 @@ const PlantDetails = () => {
             </Button>
           </div>
 
-          {/* Care Stats (المعلومات الخاصة بالسقاية والرعاية) */}
-          <div className="grid grid-cols-3 gap-8 py-8 border-y border-gray-100">
+          {/* Care Stats */}
+          <div className="grid grid-cols-3 gap-4 py-8 border-y border-gray-200">
             <CareInfo
               icon={<Droplets size={20} className="text-blue-300" />}
               label="Water"
@@ -101,7 +98,7 @@ const PlantDetails = () => {
           </div>
         </div>
 
-        {/* القسم اليمين: الصورة مع الاسم */}
+        {/* Right Side */}
         <div className="order-1 md:order-2 relative group m-auto">
           <div className="rounded-[50px] overflow-hidden aspect-[4/5] shadow-2xl">
             <img
@@ -110,11 +107,11 @@ const PlantDetails = () => {
               className="w-full h-full object-cover transition duration-1000 hover:scale-105"
             />
           </div>
-          {/* الاسم أسفل يسار الصورة */}
+          {/* Text above the image */}
           <div className="absolute bottom-10 left-10 text-white">
-            <h1 className="text-5xl md:text-7xl font-serif leading-none drop-shadow-lg">
+            <h1 className="text-4xl md:text-7xl font-serif leading-none drop-shadow-lg">
               {plant.name.split(" ")[0]} <br />
-              <span className="text-3xl md:text-5xl opacity-90">
+              <span className="text-2xl md:text-5xl opacity-90">
                 {plant.name.split(" ").slice(1).join(" ")}
               </span>
             </h1>
@@ -130,7 +127,7 @@ const PlantDetails = () => {
         <div className="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center flex-shrink-0">
           <Sparkles size={40} className="text-white" />
         </div>
-        <div>
+        <div className="text-center md:text-start">
           <h4 className="text-xs font-bold uppercase tracking-[0.4em] opacity-50 mb-4">
             Pro Editorial Tip
           </h4>
@@ -145,10 +142,10 @@ const PlantDetails = () => {
   );
 };
 
-// مكون صغير للمعلومات (Helper Component)
+// Helper Component
 const CareInfo = ({ icon, label, value, border }) => (
   <div
-    className={`text-center ${border ? "border-x border-gray-100 px-4" : ""}`}
+    className={`text-center ${border ? "border-x border-gray-200 px-4" : ""}`}
   >
     <div className="mb-2 flex justify-center">{icon}</div>
     <p className="text-[9px] font-bold text-gray-400 uppercase tracking-widest mb-1">

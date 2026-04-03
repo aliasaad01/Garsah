@@ -15,7 +15,7 @@ const Register = () => {
     e.preventDefault();
     if (formData.name && formData.email && formData.password) {
       toast.success(`Welcome to the family, ${formData.name}! ✨`);
-      navigate("/login");
+      navigate("/");
     } else {
       toast.error("All fields are required.");
     }

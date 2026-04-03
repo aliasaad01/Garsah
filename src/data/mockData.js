@@ -96,24 +96,3 @@ export const plants = [
       "Famous for its natural leaf-holes, the Monstera is a tropical favorite.",
   },
 ];
-
-export const myOwnedPlants = [
-  {
-    id: 1,
-    name: "Fiddle Leaf Fig",
-    lastWatered: "2 days ago",
-    health: "Excellent",
-    image:
-      "https://images.unsplash.com/photo-1596547612397-1432a7a7d37d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RmlkZGxlJTIwTGVhZiUyMEZpZ3xlbnwwfHwwfHx8MA%3D%3D",
-    waterSchedule: 7, // كل 7 أيام
-  },
-  {
-    id: 3,
-    name: "Snake Plant",
-    lastWatered: "5 days ago",
-    health: "Good",
-    image:
-      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000",
-    waterSchedule: 14,
-  },
-];

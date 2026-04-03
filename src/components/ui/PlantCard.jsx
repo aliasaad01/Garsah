@@ -6,7 +6,7 @@ const PlantCard = ({ plant }) => {
   const { addToMyPlants } = usePlants();
   return (
     <div className="group">
-      {/* قسم الصورة مع النوع */}
+      {/* Image + Popups */}
       <Link to={`/plant/${plant.id}`}>
         <div className="relative rounded-[30px] overflow-hidden aspect-[4/5] mb-6 bg-gray-100">
           <img
@@ -24,7 +24,7 @@ const PlantCard = ({ plant }) => {
         </div>
       </Link>
 
-      {/* معلومات النبتة */}
+      {/* Plant Info */}
       <div className="flex justify-between items-start px-2">
         <div>
           <h3 className="text-xl font-bold text-gray-800">{plant.name}</h3>
@@ -35,7 +35,7 @@ const PlantCard = ({ plant }) => {
         </span>
       </div>
 
-      {/* زر الإضافة للسلة */}
+      {/* Add To My Plants Button  */}
       <button
         onClick={() => addToMyPlants(plant)}
         className="w-full mt-6 bg-[#2D5A27] border border-white hover:border-[#2D5A27] text-white py-4 rounded-full

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Droplets, Heart, Calendar, Plus, Search } from "lucide-react";
 import Button from "../components/ui/Button";
 import { usePlants } from "../context/PlantContext";
+import { Link } from "react-router-dom";
 
 const MyPlants = () => {
   const { myPlants } = usePlants();
@@ -30,12 +31,11 @@ const MyPlants = () => {
             companions.
           </p>
         </div>
-        <Button
-          onClick={() => (window.location.href = "/shop")}
-          className="flex items-center gap-2"
-        >
-          <Plus size={18} /> Add New Plant
-        </Button>
+        <Link to={"/shop"}>
+          <Button className="flex items-center gap-2">
+            <Plus size={18} /> Add New Plant
+          </Button>
+        </Link>
       </div>
 
       {/* Stats Summary (شريط ملخص الحالة) */}

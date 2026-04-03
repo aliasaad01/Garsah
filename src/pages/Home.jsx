@@ -22,7 +22,9 @@ const Home = () => {
             <Link to={"/shop"}>
               <Button variant="primary">Start Your Green Journey</Button>
             </Link>
-            <Button variant="secondary">Browse Collection</Button>
+            <Link to={"/"}>
+              <Button variant="secondary">Browse Collection</Button>
+            </Link>
           </div>
         </div>
         <div className="order-1 md:order-2">
@@ -107,7 +109,7 @@ const Home = () => {
 };
 
 const FeatureItem = ({ icon, title, desc }) => (
-  <div className="flex flex-col gap-4 bg-gray-100 p-4 rounded-2xl shadow-md hover:scale-105 transition-all duration-300">
+  <div className="flex flex-col gap-4 bg-gray-100 p-4 rounded-2xl shadow-md hover:scale-105 transition-all duration-300 border hover:border-[#2D5A27]">
     <div className="w-12 h-12 bg-[#F8F9F5] rounded-2xl flex items-center justify-center">
       {icon}
     </div>

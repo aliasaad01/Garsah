@@ -1,16 +1,16 @@
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { plants } from "../data/mockData";
 import PlantCard from "../components/ui/PlantCard";
 import { ChevronLeft, ChevronRight, Search } from "lucide-react";
 
 const Shop = () => {
-  // 1. States لإدارة الفلترة والبحث والصفحات
+  // 1. States for filter, page, search
   const [searchQuery, setSearchQuery] = useState("");
   const [category, setCategory] = useState("All");
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6;
 
-  // 2. تصفية البيانات بناءً على البحث والفئة (Logic)
+  // 2. Filter the plants
   const filteredPlants = useMemo(() => {
     return plants.filter((plant) => {
       const matchesSearch = plant.name
@@ -23,7 +23,7 @@ const Shop = () => {
     });
   }, [searchQuery, category]);
 
-  // 3. حساب البيانات المعروضة في الصفحة الحالية (Pagination Logic)
+  // 3. For Pagination
   const totalPages = Math.ceil(filteredPlants.length / itemsPerPage);
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentPlants = filteredPlants.slice(
@@ -31,7 +31,7 @@ const Shop = () => {
     startIndex + itemsPerPage,
   );
 
-  // 4. دالة لتغيير الصفحة مع التأكد من عدم الخروج عن الحدود
+  // 4. Next and Previous page
   const goToPage = (pageNumber) => {
     if (pageNumber >= 1 && pageNumber <= totalPages) {
       setCurrentPage(pageNumber);
@@ -75,7 +75,7 @@ const Shop = () => {
           </div>
 
           {/* Search Input */}
-          <div className="relative w-full md:w-72">
+          <div className="relative w-8/12 md:w-72">
             <input
               type="text"
               value={searchQuery}
@@ -94,7 +94,7 @@ const Shop = () => {
         </div>
       </div>
 
-      {/* Grid: عرض النباتات المفلترة فقط */}
+      {/* Display Filtered Plants */}
       {currentPlants.length > 0 ? (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
           {currentPlants.map((plant) => (

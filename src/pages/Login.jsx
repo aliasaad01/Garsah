@@ -11,7 +11,6 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
 
-    // منطق بسيط لمحاكاة تسجيل الدخول
     if (email === "admin@garsah.com" && password === "123456") {
       toast.success("Welcome back, Admin!");
       navigate("/dashboard");

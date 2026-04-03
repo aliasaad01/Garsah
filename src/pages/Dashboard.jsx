@@ -36,13 +36,13 @@ const Dashboard = () => {
         </div>
       </div>
 
-      {/* 1. Stats Cards Grid */}
+      {/* Stats Cards Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
         <OverviewCard
           icon={<Users size={20} />}
           label="Total Users"
           value="12,482"
-          badge="+12% vs LY"
+          badge="+12% vs last yr"
           color="green"
         />
         <OverviewCard
@@ -62,7 +62,7 @@ const Dashboard = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-        {/* 2. Plant Inventory (Left - 2/3 width) */}
+        {/* Plant Inventory */}
         <div className="lg:col-span-2">
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-xl font-bold flex items-center gap-2">
@@ -84,9 +84,9 @@ const Dashboard = () => {
             </div>
           </div>
 
-          <div className="bg-white rounded-[24px] border border-gray-100 overflow-hidden shadow-sm">
-            <table className="w-full text-left text-sm">
-              <thead className="bg-gray-50/50 text-[10px] uppercase tracking-widest text-gray-400">
+          <div className="bg-white rounded-[24px] border border-gray-100 overflow-x-auto shadow-sm">
+            <table className="min-w-max w-full text-left text-sm">
+              <thead className="bg-gray-50/50 text-[10px] uppercase tracking-widest scrollbar-thin text-gray-400">
                 <tr>
                   <th className="px-6 py-4 font-bold">Plant Variety</th>
                   <th className="px-6 py-4 font-bold">Category</th>
@@ -96,7 +96,7 @@ const Dashboard = () => {
                 </tr>
               </thead>
               <tbody className="divide-y divide-gray-50">
-                {plants.slice(0, 3).map((plant) => (
+                {plants.slice(0, 5).map((plant) => (
                   <tr
                     key={plant.id}
                     className="hover:bg-gray-50/30 transition-colors"
@@ -123,14 +123,14 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-6 py-4 font-medium text-gray-600">
-                      42 units
+                      {42 + plant.id} units
                     </td>
                     <td className="px-6 py-4 font-bold text-gray-800">
                       ${plant.price}
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex justify-center gap-3 text-gray-400">
-                        <button className="hover:text-black">
+                        <button className="hover:text-blue-600">
                           <Edit2 size={16} />
                         </button>
                         <button className="hover:text-red-500">
@@ -145,7 +145,7 @@ const Dashboard = () => {
           </div>
         </div>
 
-        {/* 3. Recent Orders (Right - 1/3 width) */}
+        {/* Recent Orders */}
         <div>
           <h2 className="text-xl font-bold flex items-center gap-2 mb-6">
             <Truck size={20} className="text-gray-800" /> Recent Orders
@@ -177,7 +177,7 @@ const Dashboard = () => {
   );
 };
 
-// Components المساعدة لتنظيم الكود
+// Helper Component
 const OverviewCard = ({ icon, label, value, badge, color }) => (
   <div className="bg-white p-8 rounded-[32px] border border-gray-100 shadow-sm relative overflow-hidden group hover:border-green-200 transition-all">
     <div className="flex items-center gap-4 mb-4">
