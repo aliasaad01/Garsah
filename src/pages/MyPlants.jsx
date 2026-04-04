@@ -123,13 +123,11 @@ const MyPlants = () => {
           <p className="text-gray-400 font-serif text-xl">
             Your sanctuary is waiting for its first inhabitant.
           </p>
-          <Button
-            variant="secondary"
-            className="mt-6"
-            onClick={() => (window.location.href = "/shop")}
-          >
-            Go to Shop
-          </Button>
+          <Link to={"/shop"}>
+            <Button variant="secondary" className="mt-6">
+              Go to Shop
+            </Button>
+          </Link>
         </div>
       )}
     </div>
