@@ -6,8 +6,7 @@ export const plants = [
     price: 65.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image:
-      "https://images.unsplash.com/photo-1596547612397-1432a7a7d37d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RmlkZGxlJTIwTGVhZiUyMEZpZ3xlbnwwfHwwfHx8MA%3D%3D",
+    image: "/src/assets/fiddle-leaf-fig.avif",
     description:
       "The Fiddle Leaf Fig is a sculptural masterpiece, known for its broad, violin-shaped leaves.",
   },
@@ -18,8 +17,7 @@ export const plants = [
     price: 120.0,
     category: "Outdoor",
     waterFrequency: "Daily",
-    image:
-      "https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000",
+    image: "/src/assets/olive-tree.jfif",
     description:
       "A Mediterranean classic that brings a touch of ancient elegance to your garden or sunny patio.",
   },
@@ -30,8 +28,7 @@ export const plants = [
     price: 25.0,
     category: "Indoor",
     waterFrequency: "Monthly",
-    image:
-      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000",
+    image: "/src/assets/snake-plant.jfif",
     description:
       "One of the most resilient plants, perfect for beginners and low-light spaces.",
   },
@@ -42,8 +39,7 @@ export const plants = [
     price: 45.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image:
-      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000",
+    image: "/src/assets/monstera-deliciosa.jfif",
     description:
       "Famous for its natural leaf-holes, the Monstera is a tropical favorite.",
   },
@@ -54,8 +50,7 @@ export const plants = [
     price: 65.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image:
-      "https://images.unsplash.com/photo-1596547612397-1432a7a7d37d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8RmlkZGxlJTIwTGVhZiUyMEZpZ3xlbnwwfHwwfHx8MA%3D%3D",
+    image: "/src/assets/fiddle-leaf-fig.avif",
     description:
       "The Fiddle Leaf Fig is a sculptural masterpiece, known for its broad, violin-shaped leaves.",
   },
@@ -66,8 +61,7 @@ export const plants = [
     price: 120.0,
     category: "Outdoor",
     waterFrequency: "Daily",
-    image:
-      "https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000",
+    image: "/src/assets/olive-tree.jfif",
     description:
       "A Mediterranean classic that brings a touch of ancient elegance to your garden or sunny patio.",
   },
@@ -78,8 +72,7 @@ export const plants = [
     price: 25.0,
     category: "Indoor",
     waterFrequency: "Monthly",
-    image:
-      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000",
+    image: "/src/assets/snake-plant.jfif",
     description:
       "One of the most resilient plants, perfect for beginners and low-light spaces.",
   },
@@ -90,8 +83,7 @@ export const plants = [
     price: 45.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image:
-      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000",
+    image: "/src/assets/monstera-deliciosa.jfif",
     description:
       "Famous for its natural leaf-holes, the Monstera is a tropical favorite.",
   },
