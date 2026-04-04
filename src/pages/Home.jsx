@@ -30,7 +30,7 @@ const Home = () => {
         <div className="order-1 md:order-2">
           <div className="rounded-[40px] md:rounded-[80px] overflow-hidden shadow-2xl aspect-[4/5] md:aspect-auto md:h-[600px]">
             <img
-              src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000"
+              src="/src/assets/homePage.jfif"
               alt="Hero Plant"
               className="w-full h-full object-cover hover:scale-105 transition duration-1000"
             />
@@ -97,7 +97,7 @@ const Home = () => {
           </div>
           <div className="w-full md:w-1/3 aspect-square rounded-3xl overflow-hidden shadow-xl border-4 border-white/10">
             <img
-              src="https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1000"
+              src="/src/assets/homePage-2.jfif"
               className="w-full h-full object-cover hover:scale-105 transition duration-500"
               alt="Featured"
             />
