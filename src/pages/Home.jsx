@@ -30,7 +30,7 @@ const Home = () => {
         <div className="order-1 md:order-2">
           <div className="rounded-[40px] md:rounded-[80px] overflow-hidden shadow-2xl aspect-[4/5] md:aspect-auto md:h-[600px]">
             <img
-              src="/src/assets/homePage.jfif"
+              src="/plants/homePage.jfif"
               alt="Hero Plant"
               className="w-full h-full object-cover hover:scale-105 transition duration-1000"
             />
