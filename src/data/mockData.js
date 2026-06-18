@@ -6,7 +6,7 @@ export const plants = [
     price: 65.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image: "/src/assets/fiddle-leaf-fig.avif",
+    image: "/plants/fiddle-leaf-fig.avif",
     description:
       "The Fiddle Leaf Fig is a sculptural masterpiece, known for its broad, violin-shaped leaves.",
   },
@@ -17,7 +17,7 @@ export const plants = [
     price: 120.0,
     category: "Outdoor",
     waterFrequency: "Daily",
-    image: "/src/assets/olive-tree.jfif",
+    image: "/plants/olive-tree.jfif",
     description:
       "A Mediterranean classic that brings a touch of ancient elegance to your garden or sunny patio.",
   },
@@ -28,7 +28,7 @@ export const plants = [
     price: 25.0,
     category: "Indoor",
     waterFrequency: "Monthly",
-    image: "/src/assets/snake-plant.jfif",
+    image: "/plants/snake-plant.jfif",
     description:
       "One of the most resilient plants, perfect for beginners and low-light spaces.",
   },
@@ -39,7 +39,7 @@ export const plants = [
     price: 45.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image: "/src/assets/monstera-deliciosa.jfif",
+    image: "/plants/monstera-deliciosa.jfif",
     description:
       "Famous for its natural leaf-holes, the Monstera is a tropical favorite.",
   },
@@ -50,7 +50,7 @@ export const plants = [
     price: 65.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image: "/src/assets/fiddle-leaf-fig.avif",
+    image: "/plants/fiddle-leaf-fig.avif",
     description:
       "The Fiddle Leaf Fig is a sculptural masterpiece, known for its broad, violin-shaped leaves.",
   },
@@ -61,7 +61,7 @@ export const plants = [
     price: 120.0,
     category: "Outdoor",
     waterFrequency: "Daily",
-    image: "/src/assets/olive-tree.jfif",
+    image: "/plants/olive-tree.jfif",
     description:
       "A Mediterranean classic that brings a touch of ancient elegance to your garden or sunny patio.",
   },
@@ -72,7 +72,7 @@ export const plants = [
     price: 25.0,
     category: "Indoor",
     waterFrequency: "Monthly",
-    image: "/src/assets/snake-plant.jfif",
+    image: "/plants/snake-plant.jfif",
     description:
       "One of the most resilient plants, perfect for beginners and low-light spaces.",
   },
@@ -83,7 +83,7 @@ export const plants = [
     price: 45.0,
     category: "Indoor",
     waterFrequency: "Weekly",
-    image: "/src/assets/monstera-deliciosa.jfif",
+    image: "/plants/monstera-deliciosa.jfif",
     description:
       "Famous for its natural leaf-holes, the Monstera is a tropical favorite.",
   },
